@@ -1,0 +1,119 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>The Goat Climbing Gym</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="icon" type="image/png" href="Logo.png" />
+    </head>
+    <body>
+    
+      <!-- Header & Navigation -->
+      <header id="menu">
+        <div class="IntroFlex-container">
+          <nav>
+            <div class="MenuFlex-container">
+              <div class="MenuFlexitem">
+                <div><img src="Logo.png" alt="logo" /></div>
+                <p><a href="index.html">Home</a></p>
+                <p>About</p>
+                <p><a href="prices.html">Prices</a></p>
+                <p>Services</p>
+              </div>
+              <div class="FormFlexitem">
+                <p><a href="form.html">Join a class</a></p>
+              </div>
+            </div>
+          </nav>
+        </div>
+    
+      </header>
+
+  <main>
+    <section id="signup-intro">
+      <p>Want to improve your climbing skills or try it for the first time? Join one of our classes today!</p>
+    </section>
+
+    <section id="signup-form-section">
+      <h2>Climbing Class Registration</h2>
+      <form action="#" method="post">
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>Personal Info</legend>
+          <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </fieldset>
+
+        <!-- Class Preferences -->
+        <fieldset>
+          <legend>Class Preferences</legend>
+          <div class="form-group">
+            <label for="experience">Your Experience Level:</label>
+            <select id="experience" name="experience" required>
+              <option value="" disabled selected>Select your level</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="advanced">Advanced</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="class-type">Class Type:</label>
+            <select id="class-type" name="class_type" required>
+              <option value="" disabled selected>Select class type</option>
+              <option value="group">Group Class</option>
+              <option value="private">Private Session</option>
+              <option value="family">Family Class</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="preferred-time">Preferred Time:</label>
+            <select id="preferred-time" name="preferred_time" required>
+              <option value="" disabled selected>Select preferred time</option>
+              <option value="morning">Morning (9–12)</option>
+              <option value="afternoon">Afternoon (13–17)</option>
+              <option value="evening">Evening (18–21)</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Notes & Terms -->
+        <fieldset>
+          <legend>Additional Info</legend>
+          <div class="form-group">
+            <label for="notes">Notes or Questions:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any injuries, preferences or questions?"></textarea>
+          </div>
+          <div class="form-group">
+            <label>
+              <input type="checkbox" name="terms" required>
+              I agree to the terms and conditions
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <div class="form-group">
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>The Goat® - 2025. All rights reserved.</p>
+  </footer>
+  <img id="cursor-image" src="Logo.png" alt="Cursor Image">
+</body>
+</html>

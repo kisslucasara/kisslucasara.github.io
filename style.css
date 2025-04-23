@@ -1,0 +1,591 @@
+/* Base Reset & Body */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.73);
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Navigation */
+nav {
+  width: 100%;
+}
+
+.MenuFlex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 24px;
+  margin: 0;
+  padding-left: 24px;
+}
+
+.MenuFlexitem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  font-weight: 600;
+  font-size:larger;
+}
+
+.MenuFlexitem a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.MenuFlexitem a:hover {
+  color: #EF7E61;
+}
+
+.MenuFlexitem img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.FormFlexitem {
+  align-items: center;
+  padding-right: 24px;
+  justify-content: flex-end;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.FormFlexitem a {
+  color: inherit; /* Use the inherited text color */
+  text-decoration: none; /* Remove the underline */
+  font-weight: 600; /* Optional: Make the text bold */
+}
+
+.FormFlexitem a:hover {
+  color: #EF7E61; /* Add a hover effect for better interactivity */
+}
+
+/* Intro Section */
+.IntroHeader {
+  background-image: url('./Homepage_top.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-height: 735px;
+  height: auto;
+  padding: 80px 48px;
+  color: #fff;
+}
+.IntroFlex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0;
+  text-align: center;
+}
+
+.IntroFlexitem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 16px;
+}
+
+.IntroFlexitem h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.IntroFlexitem p {
+  font-size: 20px;
+  max-width: 584px;
+}
+
+/* Numbers Section */
+.NumberFlex-Container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: center;
+  padding: 24px 24px;
+}
+
+.NumberFlexitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.NumberFlexitem h3 {
+  font-size: 32px;
+  color: #f4f4f4;
+  padding-bottom: 4px;
+}
+
+.NumberFlexitem p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Why Choose Us */
+#why_choose_us {
+  background-color: #fff;
+  padding: 80px 48px;
+  color: #212121;
+}
+
+.WhyFlex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ChooseIntroFlex-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.ChooseIntroFlex-Container h2 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.ChooseIntroFlex-Container p {
+  font-size: 18px;
+  color: #757575;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Reasons Grid */
+.ChooseFlex-Container {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+
+.ChooseReasonsFlex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ChooseFlexitem {
+  flex: 1 1 calc(50% - 24px);
+  max-width: calc(50% - 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ChooseFlexitem h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #424242;
+}
+
+.ChooseFlexitem p {
+  font-size: 16px;
+  color: #757575;
+}
+
+/* Image Flex Section */
+.ChooseImageFlex-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 24px;
+  justify-content: center;
+}
+
+.ChooseFlexitem img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Coaches Section */
+#coaches {
+  padding: 80px 48px;
+  background-color: #111;
+  color: #fff;
+}
+
+.CoachFlex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1386px;
+  margin: 0 auto;
+}
+
+.CoachFlexitem {
+  flex: 1 1 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 24px;
+  background-color: #111;
+  padding: 28px 24px;
+}
+
+.CoachFlexitem h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  opacity: 0.9;
+  padding-bottom: 16px;
+}
+
+.CoachFlexitem h2 {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.CoachFlexitem p {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+/* Image Flex Container */
+.CoachImageFlex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.CoachImageFlexitem img {
+  max-width: 280px;
+  max-height: 420px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Reviews Section */
+#Opinions {
+  padding: 80px 48px;
+  background-color: #f9f9f9;
+}
+
+.OpinionIntroFlex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.OpinionIntroFlex-container h4 {
+  font-size: 16px;
+  color: #757575;
+}
+
+.OpinionIntroFlex-container h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+.OpinionFlex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1386px;
+  margin: 40px auto;
+}
+
+.OpinionFlexitem {
+  box-shadow: 0px 2px 4px rgba(58, 53, 65, 0.14);
+  border-radius: 24px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+  gap: 12px;
+}
+
+.OpinionFlexitem h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #424242;
+}
+
+.OpinionFlexitem p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #757575;
+  opacity: 0.8;
+}
+
+/* Price table */
+#prices {
+  padding: 80px 48px;
+  background-color: #111;
+  color: #fff;
+}
+
+#prices header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 16px;
+  background-color: #111;
+}
+
+#prices header h3 {
+  background-color: #111;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#prices header h2 {
+  background-color: #111;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+#prices table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+  margin: 30px auto;
+}
+
+#prices th,
+#prices td {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+#prices th {
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #dfe1e6;
+  font-weight: 400;
+}
+
+#prices tr td[colspan="4"] {
+  font-weight: 900;
+  background-color: #515151;
+  text-transform: uppercase;
+  padding: 12px 16px;
+}
+
+#prices tr:nth-child(even):not(:has([colspan])) {
+  background-color: #1a1a1a;
+}
+
+#prices p {
+  font-size: 18px;
+  margin-top: 24px;
+  color: #fff;
+  text-align: left;
+}
+
+
+#prices table,
+#prices th,
+#prices td {
+  font-size: 14px;
+}
+
+/* Main content styling for the sign-up form */
+
+/* Intro section */
+#signup-intro {
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Form section title */
+#signup-form-section h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  padding: 25px;
+  border-radius: 8px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fafafa;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #2980b9;
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #1f6391;
+}
+
+/*Cursor image*/
+#cursor-image {
+  position: absolute;
+  pointer-events: none; /* Allows clicking through the image */
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+  display: none; /* Start hidden */
+  z-index: 9999;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ChooseFlexitem,
+  .CoachFlexitem,
+  .OpinionFlexitem {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+  .MenuFlex-container {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .CoachFlex-container,
+  .OpinionFlex-container {
+      flex-direction: column;
+      gap: 24px;
+  }
+  #prices {
+    padding: 40px 16px;
+  }
+
+  #prices header h3 {
+    font-size: 20px;
+    margin: 16px 0 8px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #prices header h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #prices table {
+    font-size: 14px;
+  }
+
+  #prices th,
+  #prices td {
+    padding: 8px 12px;
+  }
+
+  #prices p {
+    font-size: 14px;
+    margin-top: 16px;
+  }
+}
