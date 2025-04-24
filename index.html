@@ -17,9 +17,9 @@
           <div class="MenuFlexitem">
             <div><img src="Logo.png" alt="logo" /></div>
             <p><a href="index.html">Home</a></p>
-            <p>About</p>
+            <p><a href="about.html">About</a></p>
             <p><a href="prices.html">Prices</a></p>
-            <p>Services</p>
+            <p><a href="services.html"></a>Services</a></p>
           </div>
           <div class="FormFlexitem">
             <p><a href="form.html">Join a class</a></p>
@@ -151,6 +151,20 @@
   <!-- Footer -->
   <footer>
     <p>The Goat® - 2025. All rights reserved.</p>
+    <p>Follow us on social media!</p>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const menuLinks = document.querySelectorAll(".MenuFlexitem a");
+    const currentUrl = window.location.pathname.replace(/\/$/, ""); // Remove trailing slash
+
+    menuLinks.forEach(link => {
+      const linkHref = link.getAttribute("href").replace(/\/$/, ""); // Remove trailing slash
+      if (linkHref === currentUrl) {
+        link.classList.add("active");
+      }
+    });
+  });
+  </script>
 </body>
 </html>

@@ -49,6 +49,10 @@ nav {
   text-decoration: none;
 }
 
+.MenuFlexitem a.active {
+  color: #EF7E61;
+}
+
 .MenuFlexitem a:hover {
   color: #EF7E61;
 }
@@ -580,4 +584,6 @@ input[type="submit"]:hover {
     margin-top: 16px;
   }
 }
+
+
 

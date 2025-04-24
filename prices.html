@@ -117,7 +117,21 @@
       <p>* Only people with a valid student ID card or seniors are eligible for the discounted price.</p>
     </section>
   </main>
-  <img id="cursor-image" src="Logo.png" alt="Cursor Image">
-
+  <footer>
+    <p>The Goat® - 2025. All rights reserved.</p>
+    <p>Follow us on social media!</p>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuLinks = document.querySelectorAll(".MenuFlexitem a");
+      const currentUrl = window.location.pathname;
+  
+      menuLinks.forEach(link => {
+        if (link.getAttribute("href") === currentUrl) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 </html>
