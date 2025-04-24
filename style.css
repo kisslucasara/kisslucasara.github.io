@@ -467,7 +467,7 @@ fieldset {
 legend {
   font-weight: bold;
   margin-bottom: 10px;
-  color: #34495e;
+  color: #fff;
 }
 
 .form-group {
@@ -525,15 +525,6 @@ input[type="submit"]:hover {
   background-color: #1f6391;
 }
 
-/*Cursor image*/
-#cursor-image {
-  position: absolute;
-  pointer-events: none; /* Allows clicking through the image */
-  width: 40px; /* Adjust size as needed */
-  height: auto;
-  display: none; /* Start hidden */
-  z-index: 9999;
-}
 
 
 
@@ -589,3 +580,4 @@ input[type="submit"]:hover {
     margin-top: 16px;
   }
 }
+
