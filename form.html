@@ -1,42 +1,41 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>The Goat Climbing Gym</title>
-      <link rel="stylesheet" href="style.css" />
-      <link rel="icon" type="image/png" href="Logo.png" />
-    </head>
-    <body>
-    
-      <!-- Header & Navigation -->
-      <header id="menu">
-        <div class="IntroFlex-container">
-          <nav>
-            <div class="MenuFlex-container">
-              <div class="MenuFlexitem">
-                <div><img src="Logo.png" alt="logo" /></div>
-                <p><a href="index.html">Home</a></p>
-                <p><a href="about.html">About</a></p>
-                <p><a href="prices.html">Prices</a></p>
-                <p><a href="services.html">Services</a></p>
-              </div>
-              <div class="FormFlexitem">
-                <p><a href="form.html">Join a class</a></p>
-              </div>
-            </div>
-          </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Goat Climbing Gym</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="Logo.png" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header id="menu">
+    <div class="IntroFlex-container">
+      <nav>
+        <div class="MenuFlex-container">
+          <div class="MenuFlexitem">
+            <div><img src="Logo.png" alt="logo" /></div>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="prices.html">Prices</a></p>
+            <p><a href="services.html">Services</a></p>
+          </div>
+          <div class="FormFlexitem">
+            <p><a href="form.html">Join a class</a></p>
+          </div>
         </div>
-    
-      </header>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <section id="signup-intro">
-      <p>Want to improve your climbing skills or try it for the first time? Join one of our classes today!</p>
+      
     </section>
 
     <section id="signup-form-section">
       <h2>Climbing Class Registration</h2>
+      <p>Want to improve your climbing skills or try it for the first time? Join one of our classes today!</p>
       <form action="#" method="post">
         <!-- Personal Info -->
         <fieldset>
@@ -53,6 +52,7 @@
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required>
           </div>
+          <button class="next-section">Next</button>
         </fieldset>
 
         <!-- Class Preferences -->
@@ -85,6 +85,7 @@
               <option value="evening">Evening (18–21)</option>
             </select>
           </div>
+          <button class="next-section">Next</button>
         </fieldset>
 
         <!-- Notes & Terms -->
@@ -100,12 +101,10 @@
               I agree to the terms and conditions
             </label>
           </div>
+          <div class="form-group">
+            <input type="submit" value="Sign Up">
+          </div>
         </fieldset>
-
-        <!-- Submit -->
-        <div class="form-group">
-          <input type="submit" value="Sign Up">
-        </div>
       </form>
     </section>
   </main>
@@ -115,18 +114,6 @@
     <p>The Goat® - 2025. All rights reserved.</p>
     <p>Follow us on social media!</p>
   </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const menuLinks = document.querySelectorAll(".MenuFlexitem a");
-    const currentUrl = window.location.pathname.replace(/\/$/, ""); // Remove trailing slash
-
-    menuLinks.forEach(link => {
-      const linkHref = link.getAttribute("href").replace(/\/$/, ""); // Remove trailing slash
-      if (linkHref === currentUrl) {
-        link.classList.add("active");
-      }
-    });
-  });
-  </script>
+  <script src="form.js"></script>
 </body>
 </html>
