@@ -48,3 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// HAMBURGER MENU
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger-menu");
+  const menuLinks = document.querySelector(".menu-links");
+
+  hamburger.addEventListener("click", () => {
+    menuLinks.classList.toggle("active");
+  });
+});

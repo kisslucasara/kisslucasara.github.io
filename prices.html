@@ -10,19 +10,28 @@
 <body>
   <!-- Header & Navigation -->
   <header id="menu">
-    <nav>
-      <div class="MenuFlex-container">
-        <div class="MenuFlexitem">
-          <div><img src="Logo.png" alt="logo" /></div>
+    <div class="IntroFlex-container">
+      <nav>
+        <div class="MenuFlex-container">
+          <!-- Static logo -->
+          <img src="Logo.png" alt="logo" class="logo" />
+
+          <!-- Hamburger menu -->
+          <img src="Logo.png" alt="menu button" class="hamburger-menu" aria-label="Toggle menu" />
+
+          <!-- Navigation links -->
+          <div class="menu-links">
             <a href="index.html">Home</a>
             <a href="gallery.html">Gallery</a>
             <a href="prices.html">Prices</a>
+            <div class="FormFlexitem">
+              <a href="form.html">Join a class</a>
+            </div>
+          </div>
         </div>
-        <div class="FormFlexitem">
-          <a href="form.html">Join a class</a>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+
   </header>
 
   <!-- Main Content -->
@@ -120,17 +129,6 @@
     <p>The Goat® - 2025. All rights reserved.</p>
     <p>Follow us on social media!</p>
   </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const menuLinks = document.querySelectorAll(".MenuFlexitem a");
-      const currentUrl = window.location.pathname;
-  
-      menuLinks.forEach(link => {
-        if (link.getAttribute("href") === currentUrl) {
-          link.classList.add("active");
-        }
-      });
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
