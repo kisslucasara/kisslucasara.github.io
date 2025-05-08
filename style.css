@@ -14,11 +14,11 @@ body {
 
 /* Header */
 header {
-  background-color: rgba(0, 0, 0, 0.73);
   display: flex;
   flex-direction: column;
+  position: relative; /* Make the header the positioning context for absolute elements */
+  z-index: 1; /* Ensure it appears above other elements */
 }
-
 
 /* Navigation */
 nav {
@@ -31,6 +31,8 @@ nav {
   align-items: center;
   gap: 24px;
   padding: 16px 24px;
+  position: relative; /* Ensure the menu-links and hamburger-menu are positioned relative to this container */
+  background-color: #111; /* Ensure the black background is applied */
 }
 
 .MenuFlexitem {
@@ -73,9 +75,6 @@ nav {
   height: auto;
   cursor: pointer; /* Make it clickable */
   z-index: 1000; /* Ensure it appears above other elements */
-  position: absolute; /* Position it relative to the parent container */
-  top: 70px; /* Position it right under the logo */
-  left: 24px; /* Align it horizontally with the logo */
 }
 
 /* Hidden Menu */
@@ -99,8 +98,7 @@ nav {
 /* Mobile Menu */
 @media (max-width: 768px) {
   .logo {
-    display: block; /* Keep the logo visible on mobile */
-    position: relative; /* Ensure the logo is positioned properly */
+    display: none; /* Hide the static logo on mobile */
   }
 
   .hamburger-menu {
@@ -110,11 +108,10 @@ nav {
   .menu-links {
     display: none; /* Hide menu links by default */
     flex-direction: column;
-    align-items: center;
     position: absolute;
-    top: 120px; /* Position the menu links below the hamburger menu */
+    top: 70px; /* Position the menu links below the hamburger menu */
     left: 24px; /* Align the menu links with the hamburger menu */
-    background-color: #111;
+    background-color: #111; /* Ensure the menu has a black background */
     padding: 16px;
     gap: 16px;
     border-radius: 8px;
@@ -255,8 +252,16 @@ nav {
 /* Reasons Grid */
 .ChooseFlex-Container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Row layout for larger screens */
   gap: 48px;
+}
+
+/* Mobile View (Screens 768px and Smaller) */
+@media (max-width: 768px) {
+  .ChooseFlex-Container {
+    flex-direction: column; /* Column layout for mobile screens */
+    gap: 24px; /* Adjust gap for smaller screens */
+  }
 }
 
 .ChooseReasonsFlex-container {
@@ -404,11 +409,22 @@ nav {
 
 .OpinionFlex-container {
   display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center;
   flex-wrap: nowrap; /* Prevent wrapping to the next row */
   justify-content: center;
   gap: 100px; /* Add spacing between items */
   max-width: 100%; /* Ensure the container spans the full width */
   overflow-x: auto; /* Allow horizontal scrolling if items overflow */
+}
+
+/*Mobile View */
+@media (max-width: 768px) {
+  .OpinionFlex-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-wrap: nowrap;
+    overflow-x: visible;
+    gap: 24px; /* Adjust gap for smaller screens */
+  }
 }
 
 .OpinionFlexitem {
@@ -517,19 +533,23 @@ nav {
 
 /* Main content styling for the sign-up form */
 
-/* Intro section */
-#signup-intro {
+#signup-form-section {
   padding: 0px 20px;
   margin-bottom: 30px;
   border-radius: 6px;
   font-size: 1rem;
 }
-
 /* Form section title */
 #signup-form-section h2 {
   font-size: 1.8rem;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+#signup-form-section p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0px;
 }
 
 /* Form styles */
@@ -703,7 +723,7 @@ input[type="submit"]:hover {
 
 /*Gallery Section*/
 #gallery {
-  padding: 80px 48px;
+  padding: 0px 80px 48px;
   background-color: #111;
   color: #fff;
   text-align: center;
